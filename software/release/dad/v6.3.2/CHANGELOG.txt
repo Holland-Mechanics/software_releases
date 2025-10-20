@@ -1,0 +1,60 @@
+## v6.3.2 — 2025-10-20
+- dit is een test
+
+## v4.6.7 — 2025-10-20
+- dit is een test
+
+## v4.5.6 — 2025-10-20
+- Dit is een test
+- incorporated rotating nipple clamps. Timing may need finetuning
+- Version 2.04
+- fix: Endless wait walking sensor when using lift.
+- Carousel as option
+- Support carousel
+- minor changes
+- bump version to 203
+- increased the debounce delay of the wheel input sensor when the option E-hub is active Heavy E-hub wheels would bounce too hard on the inputrail's wheel stop
+- This version is approved by JZ and will be released
+- machine settings are now properly working. There is one minor not important bug. If you press - or + in trueing parameters and you enter a number, the cursor jumps down with the first entry. However if you do not press - or + everything goes fine. You can still enter numbers for every setting
+- positioning for servo was broken. To prevent future problems, reading the stepperDrive option is moved to a function in which the accumalator and datapointer are preserved.
+- positioning bug for servo motor is fixed now. The similar bug in stepper mode code, may be caused by the driver
+- servo mode, does not seem to position fast enough
+- this version has the freezing bug solved and works both for servo as for stepper version. The servo option works fine, the stepper motor version lack some minor details like position finetuning
+- checkoing out to 2.01 for JZ
+- the non-stepper motor version works with this commit
+- index motor wont update when you press left or right in test machine sequence
+- The positioning for old servo way is still the same. The stepper motors cannot be finetuned in test machine sequence.
+- I hotfixed the bug in test machine sequence by disabling the correction part. I do not know how this will affect the positioning
+- fixed output display
+- incorporated an option to make both stepper as conventional drive work in one version. Unfortunately neither option positions well. Going to examing the older versions to see how these perform
+- bugfix for 110. There was a problem with the wheel positioner option
+- changed the name of input lever to input lock at request of JZ
+- mostlikely fixed all bugs. Cycle time has been corrected in the reports. Approved by John Zwarthoed
+- turned of the call to sendProd untill it is properly tested
+- version 1.10 with bugfix. Also has the production data fix incorporated
+- minor bugfix. Rimclamps wont close for fatrims during rolling. This was only the case for E-hubs, but now the rimwidth is examined. Rims larger than 50mm wide are considered fat
+- fixed a bug in the loading sequence
+- made a change where the rimdrivers wont close for E-hub wheels during loading. Because E-hubs are higher situated during loading than normal wheels, the rimdrivers and nipplehands could cause damage to the rims. There was apparantly also an existing bug. The value for E-hub loading should be 1 and 2 as displayed on MMI. But in software it differed. I believe it was 0-1 instead of 1-2
+- Bump to version DAD109
+- Bug fix production data: Left and right deviation before correction were incorrect. As well for side deviaton after correction.
+- added the extra valve to retract the nipple hands so the the brake push cylinder has enough space
+- Brake lever positioner push back when wheel is picked up with axle clamps.
+- Production data.
+- use new build system
+- dad107
+- Made small wheel loading an option
+- small wheel sequence approved by Pawel
+- Builds (for me)
+- dad106
+- dad105
+- dad105
+- dad104
+- dad103
+- dad103
+- dad102
+- dad102
+- dad102
+- dad101/dad102
+- dad101
+- dad101
+- dad100  = dac804.spc + dac804.fat + dac804.pst
